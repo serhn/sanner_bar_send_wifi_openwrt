@@ -12,6 +12,7 @@ opkg install kmod-usb-hid triggerhappy wget
 #### installation steps
 `
 cp conf.def.sh conf.sh
+
 ./read.sh
 `
 
