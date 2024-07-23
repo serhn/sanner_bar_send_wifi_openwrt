@@ -1,8 +1,5 @@
-
-export LAMP_GREEN=/sys/class/leds/tp-link\:blue\:system/brightness
-export LAMP_RED=/sys/class/leds/tp-link\:blue\:system/brightness
-
-export URL="https://URL_SEND_DATA/api/scan/done"
+export MODEL_ROUTER="wr703n" #gl6416
+export URL="URL_SEND_DATA" #url send code example "https://example.com"
 export SCANNER_DONE="SECRET_KEY" #example "saiwoh1aeva3Hei1OhxoeYah4ihae3ae" 
-
 export LINE_END="KEY_ENTER"
+
