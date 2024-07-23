@@ -1,2 +1,1 @@
-#!/bin/sh
-echo 0 > /sys/class/leds/gl-connect\:red\:wlan/brightness
+echo 0 > $LAMP_RED
