@@ -12,7 +12,7 @@ CODE=""
 thd --dump /dev/input/event0 |  awk '{ if($1!="#" && $3==1)  print $2}' | while read line
 do
   DETECT_ENTER=`echo $line | grep "ENTER" | wc -l`
-  if [ "DETECT_ENTER" = "1"  ]; then
+  if [ "$DETECT_ENTER" = "1"  ]; then
 # echo -n $CODE
 ./led/$MODEL_ROUTER/stop.sh
 ./led/$MODEL_ROUTER/blink.sh&
