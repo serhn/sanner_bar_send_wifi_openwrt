@@ -11,7 +11,8 @@ fi
 CODE=""
 thd --dump /dev/input/event0 |  awk '{ if($1!="#" && $3==1)  print $2}' | while read line
 do
-  if [ "$line" = "$LINE_END" ]; then
+  DETECT_ENTER=`cat $line | grep "ENTER" | wc -l`
+  if [ "DETECT_ENTER" = "1"  ]; then
 # echo -n $CODE
 ./led/$MODEL_ROUTER/stop.sh
 ./led/$MODEL_ROUTER/blink.sh&
